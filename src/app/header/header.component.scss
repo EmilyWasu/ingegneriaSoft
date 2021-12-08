@@ -1,0 +1,17 @@
+.root {
+    width: 100%;
+    height: 70px;
+    background-color: crimson;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+
+    div,.title {
+        flex-grow: 1;
+    }
+    .title {
+        font-size: xx-large;
+        color: antiquewhite;
+    }
+}
