@@ -1,143 +1,18 @@
 .root {
     width: 100%;
-    height: 200px;
-    background-color: crimson;
+    height: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:center;
 
-    div, .imglogo {
-        height: 200px;
+    .img-container {
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        border-radius: 50%;
+            .imglogo {
+                height: 200px;
+        } 
     }
 }
-
-.search {
-    box-sizing: border-box;
-    width: 80%;
-    justify-content:center;
-  }
-  
-  /* Style the search field */
-  form.search input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  /* Style the submit button */
-  form.search button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #cdd2d6;
-    color: rgb(112, 108, 108);
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-  }
-  
-  form.search button:hover {
-    background: #ffffff;
-  }
-  
-  /* Clear floats */
-  form.search::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .titolo {
-    box-sizing: border-box;
-    width: 80%;
-    justify-content:center;
-  }
-  
-  /* Style the search field */
-  form.titolo input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  /* Clear floats */
-  form.titolo::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .autore {
-    box-sizing: border-box;
-    width: 80%;
-    justify-content:center;
-  }
-  
-  /* Style the search field */
-  form.autore input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  /* Clear floats */
-  form.autore::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-    .casaEditrice {
-    box-sizing: border-box;
-    width: 80%;
-    justify-content:center;
-  }
-  
-  /* Style the search field */
-  form.casaEditrice input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  /* Clear floats */
-  form.casaEditrice::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .isbn {
-    box-sizing: border-box;
-    width: 80%;
-    justify-content:center;
-  }
-  
-  /* Style the search field */
-  form.isbn input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  /* Clear floats */
-  form.isbn::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  
-  
