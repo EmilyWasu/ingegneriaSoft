@@ -7,18 +7,22 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './views/home/home.component';
 import { RicercaLibriComponent } from './ricerca-libri/ricerca-libri.component';
 import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './shared/modules/material/material.module';
+import { RisultatiRicercaComponent } from './views/risultati-ricerca/risultati-ricerca.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    RicercaLibriComponent
+    RicercaLibriComponent,
+    RisultatiRicercaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

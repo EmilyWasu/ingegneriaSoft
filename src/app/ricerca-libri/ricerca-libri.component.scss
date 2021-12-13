@@ -5,11 +5,22 @@
   flex-direction: column;
   padding: 0 80px;
   align-items: center;
-  h1{
-    text-align: center;
-    margin-bottom: 40px;
+
+  .img-container {
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    .imglogo {
+      height: 200px;
+    }
   }
-  input{
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  input {
     text-align: center;
     border: 1px solid black;
     padding: 10px 40px;
@@ -18,14 +29,15 @@
     color: rgb(90, 90, 90);
     background-color: rgb(230, 230, 230);
   }
-  button{
-    background-color:rgb(220, 89, 96);
+  button {
+    background-color: rgb(220, 89, 96);
     border: 0;
     padding: 10px 0;
     width: 50%;
     color: antiquewhite;
   }
-  input, button{
+  input,
+  button {
     border-radius: 8px;
   }
 }
