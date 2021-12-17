@@ -1,0 +1,103 @@
+{
+    "libri":[
+        {
+            "titolo": "Fu sera e fu mattina",
+            "autore": "Ken Follett",
+            "isbn": "9788804722120",
+            "casaEditrice": "Mondadori",
+            "disponibiltà": true,
+            "versione_digitale": true,
+            "n_copie": "3"
+        },
+        
+        {
+            "titolo": "Quando si avvera un desiderio",
+            "autore": "Nicholas Sparks",
+            "isbn": "9788820071769",
+            "casaEditrice": "Sperling & Kupfer",
+            "disponibiltà": true,
+            "versione_digitale": true,
+            "n_copie": "3"
+        },
+        
+        {
+            "titolo": "Il caso Fitzgerald",
+            "autore": "John Grisham",
+            "isbn": "9788804680109",
+            "casaEditrice": "Mondadori",
+            "disponibiltà": false,
+            "versione_digitale": true,
+            "n_copie": "2"
+        },
+        
+        {
+            "titolo": "Uomini che odiano le donne",
+            "autore": "Stieg Larsson",
+            "isbn": "9788831793322",
+            "casaEditrice": "Marsilio",
+            "disponibiltà": true,
+            "versione_digitale": true,
+            "n_copie": "2"
+        },
+        
+        {
+            "titolo": "Lo scudo di Talos",
+            "autore": "Valerio Massimo Manfredi",
+            "isbn": "9788804333715",
+            "casaEditrice": "Mondadori",
+            "disponibiltà": false,
+            "versione_digitale": true,
+            "n_copie": "2"
+        },
+        
+        {
+            "titolo": "Il presidente è scomparso",
+            "autore": "Bill Clinton e James Patterson",
+            "isbn": "9788830450523",
+            "casaEditrice": "Longanesi",
+            "disponibiltà": true,
+            "versione_digitale": false,
+            "n_copie": "5"
+        },
+        
+        {
+            "titolo": "La principessa di ghiaccio",
+            "autore": "Camilla Läckberg",
+            "isbn": "9788831735889",
+            "casaEditrice": "Marsilio",
+            "disponibiltà": true,
+            "versione_digitale": false,
+            "n_copie": "3"
+        },
+        
+        {
+            "titolo": "Il Piccolo Principe",
+            "autore": "Antoine de Saint-Exupéry",
+            "isbn": "9788845247415",
+            "casaEditrice": "Bompiani",
+            "disponibiltà": true,
+            "versione_digitale": true,
+            "n_copie": "3"
+        },
+        
+        {
+            "titolo": "Il giovane Holden",
+            "autore": "J. D. Salinger",
+            "isbn": "9788806218188",
+            "casaEditrice": "Einaudi",
+            "disponibiltà": false,
+            "versione_digitale": false,
+            "n_copie": "2"
+        },
+        
+        {
+            "titolo": "Pompei",
+            "autore": "Robert Harris",
+            "isbn": "9788804689836",
+            "casaEditrice": "Mondadori",
+            "disponibiltà": true,
+            "versione_digitale": false,
+            "n_copie": "3"
+        }
+    ]
+}
