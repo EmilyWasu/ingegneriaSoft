@@ -2,15 +2,15 @@
     <h1>Risultati ricerca</h1>
     <div class="libro" *ngFor="let libro of results">
         <div class="img-container">
-            <img [src]="libro.img">
+            <img [src]="libro.titolo">
         </div>
         <div class="info">
             <h3>{{libro.titolo}}</h3>
             <span>{{libro.autore}}</span>
             <span>{{libro.casaEditrice}}</span>
             <span>{{libro.isbn}}</span>
-            <span>{{libro.nCopie}}</span>
-            <span>{{libro.online}}</span>
+            <span>{{libro.n_copie}}</span>
+            <span>{{libro.versione_digitale}}</span>
         </div>
     </div>
 </div>

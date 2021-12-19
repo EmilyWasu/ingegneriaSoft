@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { RicercaService } from '../ricerca.service';
 
 @Component({
   selector: 'app-ricerca-libri',
@@ -10,7 +12,7 @@ export class RicercaLibriComponent implements OnInit {
   autore: string="";
   casaEditrice: string="";
   isbn: string="";
-  constructor() { }
+  constructor(private ricercaS: RicercaService, private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +23,8 @@ export class RicercaLibriComponent implements OnInit {
       casaEditrice:this.casaEditrice,
       isbn:this.isbn
     };
-    console.log(args)
+    console.log(args);
+    this.ricercaS.ricerca(args);
+    this.router.navigate(["/risultati-ricerca"]);
   }
 }

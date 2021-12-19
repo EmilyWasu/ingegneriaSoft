@@ -3,12 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
+var cors_1 = __importDefault(require("cors"));
 var express_1 = __importDefault(require("express"));
 var catalogo_json_1 = __importDefault(require("./catalogo.json"));
 var port = 5000;
 var server = /** @class */ (function () {
     function server() {
-        var app = (0, express_1["default"])().use(express_1["default"].json());
+        var app = (0, express_1["default"])().use(express_1["default"].json(), (0, cors_1["default"])());
         app.post("/ricerca", function (req, res) {
             console.log("Qualcuno si è connesso");
             //ottengo i dati dei libri e li inserisco nella var catalogo

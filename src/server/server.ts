@@ -1,3 +1,4 @@
+import cors from "cors";
 import { resolve } from "dns";
 import express from "express";
 import libri from "./catalogo.json";
@@ -17,7 +18,8 @@ const port= 5000;
 
 export default class server {
     constructor () {
-        const app = express () .use(express.json());
+        const app = express () .use(express.json(), cors());
+        
         app.post ("/ricerca", (req, res) => {
             console.log ("Qualcuno si è connesso");
             //ottengo i dati dei libri e li inserisco nella var catalogo

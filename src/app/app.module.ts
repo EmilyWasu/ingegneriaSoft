@@ -9,6 +9,7 @@ import { RicercaLibriComponent } from './ricerca-libri/ricerca-libri.component';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/modules/material/material.module';
 import { RisultatiRicercaComponent } from './views/risultati-ricerca/risultati-ricerca.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RisultatiRicercaComponent } from './views/risultati-ricerca/risultati-r
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
