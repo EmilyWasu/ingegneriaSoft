@@ -1,8 +1,10 @@
 <div class="root">
-    <mat-icon>
+    <mat-icon (click)="back()">
         arrow_back
     </mat-icon>
-    <mat-icon>
-        home
-    </mat-icon>
+    <a routerLink="/">
+        <mat-icon>
+            home
+        </mat-icon>
+    </a>
 </div>

@@ -4,6 +4,7 @@ import express from "express";
 import libri from "./catalogo.json";
 type ricerca = {titolo: string, autore: string, casaEditrice: string, isbn: string};
 type libro = {
+    copertina: string;
     titolo: string;
     autore: string;
     isbn: string;
@@ -32,10 +33,10 @@ export default class server {
             console.log(libri);
 
             const ret = libri.libri.filter((libro: libro) => 
-                libro.autore.includes(autore) &&
-                libro.titolo.includes(titolo) &&
-                libro.casaEditrice.includes(casaEditrice) &&
-                libro.isbn.includes(isbn)
+                libro.autore.toLowerCase().includes(autore.toLowerCase()) &&
+                libro.titolo.toLowerCase().includes(titolo.toLowerCase()) &&
+                libro.casaEditrice.toLowerCase().includes(casaEditrice.toLowerCase()) &&
+                libro.isbn.toLowerCase().includes(isbn.toLowerCase())
             );
 
             res.status(200).send(ret);

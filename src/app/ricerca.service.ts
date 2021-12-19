@@ -23,6 +23,6 @@ export class RicercaService {
   constructor(private http: HttpClient) { }
 
   ricerca(params:ricerca) {
-    this.lastObservable = this.http.post("localhost:5000/ricerca", params);
+    this.lastObservable = this.http.post("http://localhost:5000/ricerca", JSON.stringify (params), {headers:{"Content-Type": "application/json"}});
   }
 }

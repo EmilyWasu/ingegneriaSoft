@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server": "npx tsc --resolveJsonModule --esModuleInterop ./src/server/server.ts && node ./src/server/server.js",
-    "dev": "concurrently -k \"npm run start \" \"npm run server\""
+    "dev": "npm install && concurrently -k \"npm run start \" \"npm run server\""
   },
   "private": true,
   "dependencies": {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RicercaService } from 'src/app/ricerca.service';
 
 type libro = {
+  copertina: string;
   titolo: string;
   autore: string;
   isbn: string;

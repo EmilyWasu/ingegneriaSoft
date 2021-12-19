@@ -19,10 +19,10 @@ var server = /** @class */ (function () {
             //controllo, per ogni libro del catalogo, se sono contenuti nei rispettivi campi, nel caso in cui anche solo un campo non conten
             console.log(catalogo_json_1["default"]);
             var ret = catalogo_json_1["default"].libri.filter(function (libro) {
-                return libro.autore.includes(autore) &&
-                    libro.titolo.includes(titolo) &&
-                    libro.casaEditrice.includes(casaEditrice) &&
-                    libro.isbn.includes(isbn);
+                return libro.autore.toLowerCase().includes(autore.toLowerCase()) &&
+                    libro.titolo.toLowerCase().includes(titolo.toLowerCase()) &&
+                    libro.casaEditrice.toLowerCase().includes(casaEditrice.toLowerCase()) &&
+                    libro.isbn.toLowerCase().includes(isbn.toLowerCase());
             });
             res.status(200).send(ret);
         });
