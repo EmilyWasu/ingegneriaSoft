@@ -7,7 +7,8 @@
             "casaEditrice": "Mondadori",
             "disponibiltà": true,
             "versione_digitale": true,
-            "n_copie": "3"
+            "n_copie": "3",
+            "copertina": "https://www.mondadori.it/content/uploads/2020/09/978880472212HIG.JPG"
         },
         
         {
@@ -17,7 +18,8 @@
             "casaEditrice": "Sperling & Kupfer",
             "disponibiltà": true,
             "versione_digitale": true,
-            "n_copie": "3"
+            "n_copie": "3",
+            "copertina": "https://www.mondadoristore.it/img/QUANDO-SI-AVVERA-UN-DESIDERIO-Nicholas-Sparks/ea802226487941/BL/BL/63/FRB/879411/?tit=QUANDO+SI+AVVERA+UN+DESIDERIO&aut=Nicholas+Sparks"
         },
         
         {
@@ -27,7 +29,8 @@
             "casaEditrice": "Mondadori",
             "disponibiltà": false,
             "versione_digitale": true,
-            "n_copie": "2"
+            "n_copie": "2",
+            "copertina": "https://www.mondadoristore.it/img/Il-caso-Fitzgerald-John-Grisham/ea978880468010/BL/BL/01/NZO/?tit=Il+caso+Fitzgerald&aut=John+Grisham"
         },
         
         {
@@ -37,7 +40,8 @@
             "casaEditrice": "Marsilio",
             "disponibiltà": true,
             "versione_digitale": true,
-            "n_copie": "2"
+            "n_copie": "2",
+            "copertina": "https://www.mondadoristore.it/img/Uomini-che-odiano-donne-Stieg-Larsson/ea978883174335/BL/BL/01/NZO/?tit=Uomini+che+odiano+le+donne.+Millennium.+1.&aut=Stieg+Larsson"
         },
         
         {
@@ -47,7 +51,8 @@
             "casaEditrice": "Mondadori",
             "disponibiltà": false,
             "versione_digitale": true,
-            "n_copie": "2"
+            "n_copie": "2",
+            "copertina": "https://images-na.ssl-images-amazon.com/images/I/71ZJ2zeDmiL.jpg"
         },
         
         {
@@ -57,7 +62,8 @@
             "casaEditrice": "Longanesi",
             "disponibiltà": true,
             "versione_digitale": false,
-            "n_copie": "5"
+            "n_copie": "5",
+            "copertina": "https://images-na.ssl-images-amazon.com/images/I/81x+zPDyGlL.jpg"
         },
         
         {
@@ -67,7 +73,8 @@
             "casaEditrice": "Marsilio",
             "disponibiltà": true,
             "versione_digitale": false,
-            "n_copie": "3"
+            "n_copie": "3",
+            "copertina": "https://m.media-amazon.com/images/I/51RWXq7zebL.jpg"
         },
         
         {
@@ -77,7 +84,8 @@
             "casaEditrice": "Bompiani",
             "disponibiltà": true,
             "versione_digitale": true,
-            "n_copie": "3"
+            "n_copie": "3",
+            "copertina": "https://images-na.ssl-images-amazon.com/images/I/7109+bTeY4L.jpg"
         },
         
         {
@@ -87,7 +95,8 @@
             "casaEditrice": "Einaudi",
             "disponibiltà": false,
             "versione_digitale": false,
-            "n_copie": "2"
+            "n_copie": "2",
+            "copertina": "https://images-na.ssl-images-amazon.com/images/I/61aaE2dYxsL.jpg"
         },
         
         {
@@ -97,7 +106,8 @@
             "casaEditrice": "Mondadori",
             "disponibiltà": true,
             "versione_digitale": false,
-            "n_copie": "3"
+            "n_copie": "3",
+            "copertina": "https://www.mondadoristore.it/img/Pompei-Robert-Harris/ea978880468983/BL/BL/01/NZO/?tit=Pompei&aut=Robert+Harris"
         }
     ]
 }
