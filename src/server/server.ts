@@ -1,8 +1,7 @@
 import cors from "cors";
-import { resolve } from "dns";
 import express from "express";
 import libri from "./catalogo.json";
-type ricerca = {titolo: string, autore: string, casaEditrice: string, isbn: string};
+
 type libro = {
     copertina: string;
     titolo: string;
@@ -15,33 +14,27 @@ type libro = {
 };
 
 
-const port= 5000;
+const app = express().use(express.json(), cors());
 
-export default class server {
-    constructor () {
-        const app = express () .use(express.json(), cors());
-        
-        app.post ("/ricerca", (req, res) => {
-            console.log ("Qualcuno si è connesso");
-            //ottengo i dati dei libri e li inserisco nella var catalogo
+app.post("/ricerca", (req, res) => {
+    console.log("Qualcuno si è connesso");
+    //ottengo i dati dei libri e li inserisco nella var catalogo
 
-            //const parametri: ricerca = JSON.parse(req.body);
-            const { titolo, autore, casaEditrice, isbn } = req.body;
-            //creo una variabile che contenga i parametri di ricerca
-            //controllo, per ogni libro del catalogo, se sono contenuti nei rispettivi campi, nel caso in cui anche solo un campo non conten
-            
-            console.log(libri);
+    //const parametri: ricerca = JSON.parse(req.body);
+    const { titolo, autore, casaEditrice, isbn } = req.body;
+    //creo una variabile che contenga i parametri di ricerca
+    //controllo, per ogni libro del catalogo, se sono contenuti nei rispettivi campi, nel caso in cui anche solo un campo non conten
 
-            const ret = libri.libri.filter((libro: libro) => 
-                libro.autore.toLowerCase().includes(autore.toLowerCase()) &&
-                libro.titolo.toLowerCase().includes(titolo.toLowerCase()) &&
-                libro.casaEditrice.toLowerCase().includes(casaEditrice.toLowerCase()) &&
-                libro.isbn.toLowerCase().includes(isbn.toLowerCase())
-            );
+    console.log(libri);
 
-            res.status(200).send(ret);
-        });
-        app.listen (port);
-    }
-}
-new server();
+    const ret = libri.libri.filter((libro: libro) =>
+        libro.autore.toLowerCase().includes(autore.toLowerCase()) &&
+        libro.titolo.toLowerCase().includes(titolo.toLowerCase()) &&
+        libro.casaEditrice.toLowerCase().includes(casaEditrice.toLowerCase()) &&
+        libro.isbn.toLowerCase().includes(isbn.toLowerCase())
+    );
+
+    res.status(200).send(ret);
+});
+
+export default app;
