@@ -37,7 +37,7 @@ describe("/ricerca", () => {
         it("Should return every book", async () => {
             const { statusCode, body } = await request(app).post("/ricerca").send({
                 "titolo": "",
-                "autore": "Ken",
+                "autore": "",
                 "casaEditrice": "",
                 "isbn": ""
             });
